@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Evaluation Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="header">
+        <h1>AI Evaluation Engine</h1>
+        <p>Hybrid scoring • Explainable grading • Semantic intelligence</p>
+    </header>
+
+    <div class="grid">
+
+        <!-- INPUT BLOCK -->
+        <div class="card">
+            <h2>✍️ Input</h2>
+
+            <textarea id="question" placeholder="Enter question"></textarea>
+            <textarea id="reference" placeholder="Enter reference answer"></textarea>
+            <textarea id="student" placeholder="Enter student answer"></textarea>
+
+            <input id="marks" type="number" value="5" />
+
+            <button id="runBtn">Run Evaluation</button>
+        </div>
+
+        <!-- RESULT BLOCK -->
+        <div class="card">
+            <h2>📊 Result</h2>
+
+            <div id="result" class="placeholder">
+                No evaluation yet
+            </div>
+        </div>
+
+        <!-- AUDIT BLOCK -->
+        <div class="card">
+            <h2>🧾 Audit</h2>
+
+            <div id="audit" class="placeholder">
+                Run evaluation to see details
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
